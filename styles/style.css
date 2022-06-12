@@ -66,24 +66,33 @@ p {
 }
 
 /* About page*/
-.about-section {
+.content-container {
 	padding: 250px 20px;
 }
-.about-section-content {
+.content {
 	margin: 30px;
 }
-.about-section h1 {
+.content h1 {
 	font-size: 64px;
 	line-height: 1.5;
 }
 
-.about-section h2 {
+.content h2 {
 	font-size: 18px;
-	font-family: var(--default-font-family);
+}
+
+.content h3 {
+	font-size: 24px;
+	line-height: 1.5;
+}
+
+.content p {
+	font-size: 14px;
 }
 
 .avatar {
 	border-radius: 10px;
+	margin-left: 50px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -106,12 +115,16 @@ p {
 		text-align: center;
 	}
 
-	.about-section {
+	.content {
 		text-align: center;
 		padding: 0;
 	}
 
-	.about-section h1 {
+	.content h1 {
 		font-size: 44px;
+	}
+
+	.avatar {
+		margin: 0;
 	}
 }
