@@ -95,6 +95,44 @@ p {
 	margin-left: 50px;
 }
 
+.logo {
+	max-width: 210px;
+}
+
+.small-logo {
+	max-width: 58px;
+}
+
+nav {
+	padding: 20px 0;
+}
+
+nav ul {
+	padding: 0;
+	margin: 0;
+	height: 58px;
+}
+
+nav li {
+	display: inline;
+	list-style: none;
+	padding-right: 10px;
+}
+
+nav li:last-child {
+	padding-right: 0;
+}
+nav a {
+	text-decoration: none;
+	color: #272142;
+	transition: all 0.15s ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+	color: var(--branding-color);
+}
+
 @media only screen and (max-width: 1199px) {
 	.project-description {
 		padding: 50px 15px;
@@ -126,5 +164,9 @@ p {
 
 	.avatar {
 		margin: 0;
+	}
+
+	nav a {
+		font-size: 14px;
 	}
 }
